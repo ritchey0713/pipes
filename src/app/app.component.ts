@@ -10,6 +10,7 @@ export class AppComponent {
   name: string;
   date: string;
   amount: number;
+  height: number;
 
   onNameChange = (value: string) => {
     this.name = value;
@@ -20,8 +21,13 @@ export class AppComponent {
   }
 
   onAmountChange = (value: string) => {
-    const amountInput = parseInt(value)
+    const amountInput = parseFloat(value)
     this.amount = amountInput
+  }
+
+  onHeightChange = (value: string) => {
+    const heightAmount = parseFloat(value)
+    this.height = heightAmount
   }
 
 }
