@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'pipes';
   name: string;
   date: string;
+  amount: number;
 
   onNameChange = (value: string) => {
     this.name = value;
@@ -16,6 +17,11 @@ export class AppComponent {
 
   onDateChange = (value: string) => {
     this.date = value;
+  }
+
+  onAmountChange = (value: string) => {
+    const amountInput = parseInt(value)
+    this.amount = amountInput
   }
 
 }
