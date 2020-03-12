@@ -9,8 +9,8 @@ export class AppComponent {
   title = 'pipes';
   name: string;
 
-  onNameChange = (value) => {
-
+  onNameChange = (value: string) => {
+    this.name = value;
   }
 
 }
