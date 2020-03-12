@@ -8,9 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'pipes';
   name: string;
+  date: string;
 
   onNameChange = (value: string) => {
     this.name = value;
+  }
+
+  onDateChange = (value: string) => {
+    this.date = value;
   }
 
 }
